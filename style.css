@@ -1,0 +1,73 @@
+/* --- CƠ BẢN --- */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+/* Ẩn liên kết nhảy dòng đi, chỉ hiện khi nhấn Tab (tốt cho WAVE Accessibility) */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #000;
+    color: #fff;
+    padding: 8px;
+    z-index: 100;
+}
+.skip-link:focus {
+    top: 0;
+}
+
+/* --- MỤC 3: Vô hiệu hóa định kiểu cũ của li bằng dấu chú thích (comment) --- */
+li {
+    /* display: inline-block; */
+    /* width: 150px; */
+}
+
+/* --- MỤC 4: Thay đổi phần tử nav thành inline-block và rộng 80% --- */
+nav {
+    display: inline-block;
+    width: 80%;
+    background-color: #333333;
+}
+
+/* --- MỤC 5: Bộ chọn con cháu (nav img) chỉnh độ rộng ảnh trong thanh điều hướng là 10% --- */
+nav img {
+    width: 10%;
+}
+
+/* --- MỤC 6 & 8: Tùy chỉnh lớp .grid sử dụng lưới 2 cột, rộng 40% mỗi cột + justify-content/row-gap --- */
+.grid {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: space-around; /* Căn đều các cột */
+    align-items: center;          /* Căn giữa theo chiều dọc */
+    row-gap: 20px;                /* Khoảng cách giữa các hàng */
+    background-color: #ffffff;
+}
+
+/* --- MỤC 7: Bộ chọn con cháu (.grid img) chỉnh độ rộng ảnh trong lưới là 100% --- */
+.grid img {
+    width: 100%;
+}
+
+/* --- MỤC 9: Tùy chỉnh lớp .flex với flex-wrap và justify-content --- */
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #f4f4f4;
+    padding: 10px;
+}
+
+.flex-item {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    margin: 5px;
+}
+
+header { background-color: #f4f4f4; }
+footer { background-color: #e2e2e2; }
+h1 { text-align: center; color: #2c3e50; }
+p { line-height: 1.6; }
